@@ -19,7 +19,7 @@ after_success:
   - echo "$DOCKER_PWD" | docker login -u "$DOCKER_ID" --password-stdin
 
 # Push build images to docker hub
-  - docker push catchkathirk/mulit-client
-  - docker push catchkathirk/mulit-nginx
-  - docker push catchkathirk/mulit-client
-  - docker push catchkathirk/mulit-client
+  - docker push catchkathirk/multi-client
+  - docker push catchkathirk/multi-nginx
+  - docker push catchkathirk/multi-client
+  - docker push catchkathirk/multi-client
