@@ -14,7 +14,7 @@ after_success:
   - docker build -t catchkathirk/multi-server ./server
   - docker build -t catchkathirk/multi-worker ./worker
 #  Login to Docker hub
-  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+  - echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
 # Push build images to docker hub
   - docker push catchkathirk/multi-client
   - docker push catchkathirk/multi-nginx
