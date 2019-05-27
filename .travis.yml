@@ -18,5 +18,5 @@ after_success:
 # Push build images to docker hub
   - docker push catchkathirk/multi-client
   - docker push catchkathirk/multi-nginx
-  - docker push catchkathirk/multi-client
-  - docker push catchkathirk/multi-client
+  - docker push catchkathirk/multi-server
+  - docker push catchkathirk/multi-worker
