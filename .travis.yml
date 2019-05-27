@@ -16,7 +16,7 @@ after_success:
 
 #  Login to Docker hub
 
-  - echo "DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 
 # Push build images to docker hub
   - docker push catchkathirk/multi-client
